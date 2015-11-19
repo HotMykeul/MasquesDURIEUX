@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MasquesDURIEUX</string>
+
+    <string name="title_activity_modif_identity">Modifier Identitée</string>
+
+    <string name="Lastname">Nom</string>
+    <string name="Firstname">Prenom</string>
+    <string name="Phone_number">Numéro de téléphone</string>
+    <string name="Modify">Modifier</string>
+    <string name="Number">Numéro</string>
+    <string name="Street_name">Libellé de la rue</string>
+    <string name="Zipcode">Code postal</string>
+    <string name="City">Ville</string>
+    <string name="OK">Valider</string>
+    <string name="Identity">Identité</string>
+    <string name="Adress">Adresse</string>
+    <string name="Cancel">Annuler</string>
+    <string name="title_activity_modif_adress">Modifier Adresse</string>
+
+</resources>

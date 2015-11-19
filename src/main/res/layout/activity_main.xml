@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Identity"
+        android:id="@+id/textView_label_identity"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Lastname"
+        android:id="@+id/textView_lastname"
+        android:layout_below="@+id/textView_label_identity"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Firstname"
+        android:id="@+id/textView_firstname"
+        android:layout_below="@+id/textView_lastname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Phone_number"
+        android:id="@+id/textView_phone"
+        android:layout_below="@+id/textView_firstname"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Modify"
+        android:id="@+id/button_modify_identity"
+        android:layout_below="@+id/textView_phone"
+        android:layout_centerHorizontal="true"
+        android:onClick="setModifyIdentity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Adress"
+        android:id="@+id/textView_label_adress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Number"
+        android:id="@+id/textView_number"
+        android:layout_below="@+id/textView_label_adress"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Street_name"
+        android:id="@+id/textView_street"
+        android:layout_below="@+id/textView_number"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Zipcode"
+        android:id="@+id/textView_zipcode"
+        android:layout_below="@+id/textView_street"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/City"
+        android:id="@+id/textView_city"
+        android:layout_below="@+id/textView_zipcode"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Modify"
+        android:id="@+id/button_modify_adress"
+        android:onClick="setModifyAdress"
+        android:layout_below="@+id/textView_city"
+        android:layout_alignLeft="@+id/textView_label_adress"
+        android:layout_alignStart="@+id/textView_label_adress" />
+
+</RelativeLayout>

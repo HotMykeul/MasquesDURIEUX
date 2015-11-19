@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="fr.univ_littoral.mdurieux.masquesdurieux.ModifAdress">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Adress"
+        android:id="@+id/textView_label_adress"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_number"
+        android:layout_below="@+id/textView_label_adress"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_street_name"
+        android:layout_below="@+id/editText_number"
+        android:text="@string/Street_name"
+        android:layout_alignLeft="@+id/editText_number"
+        android:layout_alignStart="@+id/editText_number"
+        android:layout_alignRight="@+id/editText_number"
+        android:layout_alignEnd="@+id/editText_number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_zipcode"
+        android:layout_below="@+id/editText_street_name"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Zipcode" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_city"
+        android:layout_below="@+id/editText_zipcode"
+        android:text="@string/City"
+        android:layout_alignLeft="@+id/editText_zipcode"
+        android:layout_alignStart="@+id/editText_zipcode"
+        android:layout_alignRight="@+id/editText_zipcode"
+        android:layout_alignEnd="@+id/editText_zipcode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OK"
+        android:id="@+id/button_ok"
+        android:layout_below="@+id/editText_city"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClicked"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+        android:id="@+id/button_cancel"
+        android:layout_below="@+id/button_ok"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClicked"/>
+
+</RelativeLayout>
